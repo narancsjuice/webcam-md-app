@@ -13,10 +13,7 @@ current frames (by modifying the frames into grayscale and creating
 thresholds to reduce noise) to the background to check for differences.
 
 The program then saves the timestamp of the objects entering and exiting
-the frame to a .csv file.
-
-**Known issues**
-<ul>
-<li>Timestamp start and end dates for objects need visualization</li>
-</ul>
-
+the frame to a .csv file. When closing the motion detector application
+the timestamps are displayed on a graph and hovering on the graph
+objects show the exact date and time of objects entering and exiting the
+frame.
