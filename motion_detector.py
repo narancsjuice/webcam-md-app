@@ -41,7 +41,9 @@ while True:
         (x, y, w, h) = cv2.boundingRect(contour)
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0))
 
+    # only keep last two items to avoid memory issues
     status_list.append(status)
+    status_list = status_list[-2:]
 
     if status_list[-1] == 1 and status_list[-2] == 0:
         timestamp_list.append(datetime.now())
